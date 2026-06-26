@@ -6,6 +6,7 @@ import { CanvasNav } from "./canvas";
 import { KanbanNav } from "./kanban";
 import { EmbedMarkdownFileNav, EmbedMarkdownTextNav } from "./embed-markdown";
 import { PdfNav } from "./pdf";
+import { AmbossNav } from "./amboss";
 
 const NAVIGATORS = {
     dummy: DummyNav,
@@ -15,6 +16,7 @@ const NAVIGATORS = {
     pdf: PdfNav,
     "embed-markdown-file": EmbedMarkdownFileNav,
     "embed-markdown-text": EmbedMarkdownTextNav,
+    "amboss-view": AmbossNav,
 };
 
 type NavigatorName = keyof typeof NAVIGATORS;
